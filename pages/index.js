@@ -7,6 +7,7 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
+import mypicture from "../public/mypicture.png"
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -57,8 +58,8 @@ export default function Home() {
               Software Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+            I am a student at Emerging Digital Academy, an immersion in software engineering education, 
+            establishing a foundation that will allow me to immediately contribute as an entry level software engineer.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillTwitterCircle />
@@ -66,11 +67,11 @@ export default function Home() {
               <AiFillYoutube />
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image src={mypicture} />
             </div>
           </div>
         </section>
-        <section>
+        {/* <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -131,25 +132,25 @@ export default function Home() {
               <p className="text-gray-800 py-1">Indesign</p>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="py-10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
+              
               <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+            <span className="text-teal-500">startups </span>
+             
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            As a junior developer, I've been honing my skills in Express.js, Javascript, React.js, PostgreSQL, HTML, CSS,
+            and I'm always on the lookout for new challenges and projects to tackle. I believe that coding is both an art 
+            and a science, and I'm committed to crafting elegant, efficient solutions that meet the needs of my clients and users.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
+              <h3 style={{display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px"}} className="text-3xl py-1 dark:text-white">Market Watcher</h3>
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -159,6 +160,7 @@ export default function Home() {
               />
             </div>
             <div className="basis-1/3 flex-1">
+            <h3 style={{display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px"}} className="text-3xl py-1 dark:text-white">To-Do List </h3>
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -168,6 +170,7 @@ export default function Home() {
               />
             </div>
             <div className="basis-1/3 flex-1">
+            <h3 style={{display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px"}} className="text-3xl py-1 dark:text-white">Playable Piano</h3>
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -177,30 +180,13 @@ export default function Home() {
               />
             </div>
             <div className="basis-1/3 flex-1">
+            <h3 style={{display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px"}} className="text-3xl py-1 dark:text-white">Feedback Loop</h3>
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
               />
             </div>
           </div>
