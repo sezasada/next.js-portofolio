@@ -12,6 +12,7 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
+import MarketWatcher from "../public/MarketWatcher.png"
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -32,7 +33,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyed</h1>
+            <h1 className="font-burtons text-xl">Portfolio</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -58,8 +59,8 @@ export default function Home() {
               Software Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            I am a student at Emerging Digital Academy, an immersion in software engineering education, 
-            establishing a foundation that will allow me to immediately contribute as an entry level software engineer.
+              I am a student at Emerging Digital Academy, an immersion in software engineering education,
+              establishing a foundation that will allow me to immediately contribute as an entry level software engineer.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillTwitterCircle />
@@ -135,58 +136,52 @@ export default function Home() {
         </section> */}
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              
-              <span className="text-teal-500"> agencies </span>
-            <span className="text-teal-500">startups </span>
-             
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            As a junior developer, I've been honing my skills in Express.js, Javascript, React.js, PostgreSQL, HTML, CSS,
-            and I'm always on the lookout for new challenges and projects to tackle. I believe that coding is both an art 
-            and a science, and I'm committed to crafting elegant, efficient solutions that meet the needs of my clients and users.
+              As a junior developer, I've been honing my skills in Express.js, Javascript, React.js, PostgreSQL, HTML, CSS,
+              and I'm always on the lookout for new challenges and projects to tackle. I believe that coding is both an art
+              and a science, and I'm committed to crafting elegant, efficient solutions that meet the needs of my clients and users.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <h3 style={{display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px"}} className="text-3xl py-1 dark:text-white">Market Watcher</h3>
+              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">Market Watcher</h3>
+              <div style={{ overflow: "hidden", position: "relative" }}>
+                <Image
+                  style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
+                  src={MarketWatcher}
+                  onMouseOver={(e) => { e.target.style.transform = "scale(1.4) translateZ(0)" }}
+                  onMouseOut={(e) => { e.target.style.transform = "scale(1) translateZ(0)" }}
+                />
+              </div>
+            </div>
+
+
+            <div className="basis-1/3 flex-1">
+              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">To-Do List </h3>
               <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
+                style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
+                src={MarketWatcher}
+                onMouseOver={(e) => { e.target.style.transform = "scale(1.4)" }}
+                onMouseOut={(e) => { e.target.style.transform = "scale(1)" }}
               />
             </div>
             <div className="basis-1/3 flex-1">
-            <h3 style={{display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px"}} className="text-3xl py-1 dark:text-white">To-Do List </h3>
+              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">Piano</h3>
               <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
+                style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
+                src={MarketWatcher}
+                onMouseOver={(e) => { e.target.style.transform = "scale(1.4)" }}
+                onMouseOut={(e) => { e.target.style.transform = "scale(1)" }}
               />
             </div>
             <div className="basis-1/3 flex-1">
-            <h3 style={{display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px"}} className="text-3xl py-1 dark:text-white">Playable Piano</h3>
+              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">Feedback Loop</h3>
               <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-            <h3 style={{display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px"}} className="text-3xl py-1 dark:text-white">Feedback Loop</h3>
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
+                style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
+                src={MarketWatcher}
+                onMouseOver={(e) => { e.target.style.transform = "scale(1.4)" }}
+                onMouseOut={(e) => { e.target.style.transform = "scale(1)" }}
               />
             </div>
           </div>
