@@ -14,6 +14,8 @@ import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
 import MarketWatcher from "../public/MarketWatcher.png"
+import Movies from "../public/Movies.png";
+import EarningsData from "../public/EarningsData.png";
 
 
 export default function Home() {
@@ -146,8 +148,8 @@ export default function Home() {
                 <a href="https://marketwatcher.fly.dev/#/home" target="_blank" rel="noopener noreferrer">
                   <Image
                     style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
-                    src={MarketWatcher}
-                    onMouseOver={(e) => { e.target.style.transform = "scale(1.4) translateZ(0)" }}
+                    src={EarningsData}
+                    onMouseOver={(e) => { e.target.style.transform = "scale(1.39) translateZ(0)" }}
                     onMouseOut={(e) => { e.target.style.transform = "scale(1) translateZ(0)" }}
                   />
                 </a>
@@ -156,22 +158,15 @@ export default function Home() {
 
 
             <div className="basis-1/3 flex-1">
-              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">To-Do List </h3>
-              <Image
-                style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
-                src={MarketWatcher}
-                onMouseOver={(e) => { e.target.style.transform = "scale(1.4)" }}
-                onMouseOut={(e) => { e.target.style.transform = "scale(1)" }}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">Piano</h3>
-              <Image
-                style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
-                src={MarketWatcher}
-                onMouseOver={(e) => { e.target.style.transform = "scale(1.4)" }}
-                onMouseOut={(e) => { e.target.style.transform = "scale(1)" }}
-              />
+              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">Movie Sagas</h3>
+              <a href="http://moviesagas.fly.dev" target="_blank" rel="noopener noreferrer">
+                <Image
+                  style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
+                  src={Movies}
+                  onMouseOver={(e) => { e.target.style.transform = "scale(1.2)"; e.target.style.transformOrigin = "top" }}
+                  onMouseOut={(e) => { e.target.style.transform = "scale(1)"; e.target.style.transformOrigin = "center" }}
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
               <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">Feedback Loop</h3>
@@ -184,6 +179,15 @@ export default function Home() {
                 />
 
               </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white"></h3>
+              <p
+                style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
+                src={MarketWatcher}
+                onMouseOver={(e) => { e.target.style.transform = "scale(1.4)" }}
+                onMouseOut={(e) => { e.target.style.transform = "scale(1)" }}
+              />
             </div>
           </div>
         </section>
