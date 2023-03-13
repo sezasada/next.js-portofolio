@@ -1,0 +1,82 @@
+/* html{
+    font-family: Verdana;
+    height: 99%;
+    margin: auto;
+    width: 1000px;
+}
+
+body {
+  background-color: #D3D3D3;
+  outline-style: solid;
+  outline-color: white;
+  outline-width: 1000px;
+  border: 1rem solid;
+}
+
+br {
+  line-height: .65;
+}
+
+ol {
+  padding-left: 0;
+  font-size: 12px;
+}
+    
+
+p {
+  color: black;
+  font-size: 12px;
+  line-height: .7;
+}
+
+ul {
+  color: black;
+  font-size: 12px;
+  margin-left: -15;
+  line-height: 1.5;
+}
+
+additional { 
+  text-align: right;
+  background-color: black;
+  font-size: 19px;
+  font-weight: normal;
+  border: 1px solid black;
+  color: white;
+}
+
+bold {
+  color: black;
+  padding-left: 1;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.split {
+  height: 100;
+  width: 4%;
+  position: fixed;
+  z-index: 1;
+  top:0;
+  padding-top: 20px;
+}
+
+.left {
+  height: 90%;
+  width: 55%;
+  padding: 50px;
+  left: 50; 
+}
+
+
+.right {
+  height: 95%;
+  width: 45% ;
+  padding: 50px;
+  right: 50;
+}
+
+.centered {
+  position: absolute;
+  top: 1%;
+} */
