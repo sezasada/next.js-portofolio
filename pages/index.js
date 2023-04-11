@@ -6,7 +6,7 @@ import {
 } from "react-icons/ai";
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
-
+import Link from 'next/link';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
@@ -50,10 +50,11 @@ function Home() {
                 >
                   Resume
                 </a> */}
-                <a href="/resume" className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                >
-                  Resume
-                </a>
+               <Link href="/resume">
+                  <a className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8">
+                    Resume
+                  </a>
+                </Link>
               </li>
             </ul>
           </nav>
