@@ -65,12 +65,11 @@ function Home() {
               Software Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              I am a student at Emerging Digital Academy, an immersion in software engineering education,
+              I am a graduate of Emerging Digital Academy, an immersion in software engineering education,
               establishing a foundation that will allow me to immediately contribute as an entry level software engineer.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://www.linkedin.com/in/sebastien-zasada-b0545a259/" target="_blank">
-
+              <a href="https://www.linkedin.com/in/sebastien-zasada" target="_blank">
                 <AiFillLinkedin className="icon-grow"/>
               </a>
             </div>
@@ -83,7 +82,7 @@ function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              As a junior developer, I've been honing my skills in Express.js, Javascript, React.js, PostgreSQL, HTML, CSS,
+              As a junior developer, I've been expanding my skills in Express.js, Javascript, React.js, PostgreSQL, HTML, CSS,
               and I'm always on the lookout for new challenges and projects to tackle. I believe that coding is both an art
               and a science, and I'm committed to crafting elegant, efficient solutions that meet the needs of my clients and users.
             </p>
