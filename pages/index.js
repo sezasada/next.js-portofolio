@@ -11,7 +11,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
 import mypicture from "../public/mypicture.png"
-import feedback from '../public/Feedback.png';
+import farmworks from '../public/farmworks.png';
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -101,25 +101,12 @@ function Home() {
                 </a>
               </div>
             </div>
-
-
             <div className="basis-1/3 flex-1">
-              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">Movie Sagas</h3>
-              <a href="http://moviesagas.fly.dev" target="_blank" rel="noopener noreferrer">
+              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">FarmWorks</h3>
+              <a href="https://farminthedell.fly.dev/#/main" target="_blank" rel="noopener noreferrer">
                 <Image
                   style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
-                  src={Movies}
-                  onMouseOver={(e) => { e.target.style.transform = "scale(1.2)"; e.target.style.transformOrigin = "top" }}
-                  onMouseOut={(e) => { e.target.style.transform = "scale(1)"; e.target.style.transformOrigin = "center" }}
-                />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <h3 style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} className="text-3xl py-1 dark:text-white">Feedback Loop</h3>
-              <a href="https://feedbackloop.fly.dev/#/" target="_blank" rel="noopener noreferrer">
-                <Image
-                  style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease", position: "relative", zIndex: 1 }}
-                  src={feedback}
+                  src={farmworks}
                   onMouseOver={(e) => { e.target.style.transform = "scale(1.6)"; e.target.style.transformOrigin = "top" }}
                   onMouseOut={(e) => { e.target.style.transform = "scale(1)"; e.target.style.transformOrigin = "center" }}
                 />
