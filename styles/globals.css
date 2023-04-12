@@ -14,7 +14,23 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.farmworksimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
 
+.marketwatcherimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
 * {
   box-sizing: border-box;
 }

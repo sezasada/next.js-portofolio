@@ -18,12 +18,8 @@ function Resume() {
             <div style={{ position: 'absolute', top: '20px', left: '20px', zIndex: '100' }}>
                 <FontAwesomeIcon icon={faArrowLeft} size="2x" onClick={navigateToHome} className="shake"/>
             </div>
-
             <div style={{ width: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '2px solid black', marginTop: '30px', marginBottom: '30px' }}>
-                <Image
-                    style={{}}
-                    src={resume}
-                />
+                <Image src={resume} alt="Resume"/>
             </div>
         </div>
 
