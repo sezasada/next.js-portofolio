@@ -20,9 +20,8 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`px-10 md:px-20 lg:px-40 ${
-          darkMode ? "bg-gray-900 dark:text-white" : "bg-D3D3D3"
-        }`}
+        className={`px-10 md:px-20 lg:px-40 ${darkMode ? "bg-gray-900 dark:text-white" : "bg-D3D3D3"
+          }`}
       >
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
@@ -74,7 +73,7 @@ function Home() {
             <div className="text-3xl py-1 dark:text-white ">Projects</div>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               As a junior developer, I&apos;ve been expanding my skills in
-              Express.js, Javascript, React.js, PostgreSQL, HTML, CSS, and
+              Javascript, React.js, PostgreSQL, MySQL, C#, HTML, CSS, and
               I&apos;m always on the lookout for new challenges and projects to
               tackle. I believe that coding is both an art and a science, and
               I&apos;m committed to crafting elegant, efficient solutions that
@@ -112,6 +111,27 @@ function Home() {
                     }}
                   />
                 </a>
+              </div>
+              <div className="buttonContainer">
+
+                <div className="SiteContainer">
+                  <a href="https://marketwatcher.fly.dev/#/home" target="_blank" rel="noopener noreferrer">
+
+                    <button                    >
+                      Site
+                    </button>
+                  </a>
+
+                </div>
+                <div className="CodeContainer">
+                  <a href="https://github.com/sezasada/Solo" target="_blank" rel="noopener noreferrer">
+
+                    <button>
+                      Code
+                    </button>
+                  </a>
+
+                </div>
               </div>
               <div className="text-center mt-4">
                 <p
@@ -187,6 +207,27 @@ function Home() {
                   }}
                 />
               </a>
+              <div className="buttonContainer">
+
+                <div className="SiteContainer">
+                  <a href="https://farminthedell.fly.dev/#/main" target="_blank" rel="noopener noreferrer">
+
+                    <button                    >
+                      Site
+                    </button>
+                  </a>
+
+                </div>
+                <div className="CodeContainer">
+                  <a href="https://github.com/sezasada/task_portal" target="_blank" rel="noopener noreferrer">
+
+                    <button>
+                      Code
+                    </button>
+                  </a>
+
+                </div>
+              </div>
               <div className="text-center mt-4">
                 <p
                   className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"

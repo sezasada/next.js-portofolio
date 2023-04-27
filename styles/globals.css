@@ -9,6 +9,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
 h1 {
   display: flex;
   justify-content: center;
@@ -18,6 +19,7 @@ h1 {
   margin-top: 20px;
   border-bottom: 1px solid black;
 }
+
 h2 {
   display: flex;
   justify-content: center;
@@ -27,21 +29,25 @@ h2 {
   border-bottom: 1px solid black;
 
 }
+
 h3 {
   font-size: x-large;
   margin-bottom: 10px;
 }
+
 h4 {
   font-size: large;
   margin-bottom: 10px;
 
 }
+
 h5 {
   font-size: medium;
   margin-bottom: 10px;
   position: relative;
   padding-left: 20px;
 }
+
 h5::before {
   content: "•";
   position: absolute;
@@ -56,6 +62,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 .farmworksimg {
   width: 100%;
   height: 100%;
@@ -73,26 +80,60 @@ a {
   position: relative;
   z-index: 1;
 }
+
 * {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .shake:hover {
@@ -120,4 +161,42 @@ a {
 
 .icon-grow:hover {
   transform: scale(1.2);
+}
+
+.SiteContainer {
+  background-color: teal;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border-radius: 10px;
+  color: white;
+  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+}
+.SiteContainer:hover {
+  background-color: #006d6a;
+  transform: scale(1.1);
+}
+
+.CodeContainer {
+  background-color: teal;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border-radius: 10px;
+  color: white;
+  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.CodeContainer:hover {
+  background-color: #006d6a;
+  transform: scale(1.1);
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
