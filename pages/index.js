@@ -20,8 +20,9 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`px-10 md:px-20 lg:px-40 ${darkMode ? "bg-gray-900 dark:text-white" : "bg-D3D3D3"
-          }`}
+        className={`px-10 md:px-20 lg:px-40 ${
+          darkMode ? "bg-gray-900 dark:text-white" : "bg-D3D3D3"
+        }`}
       >
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
@@ -113,24 +114,23 @@ function Home() {
                 </a>
               </div>
               <div className="buttonContainer">
-
                 <div className="SiteContainer">
-                  <a href="https://marketwatcher.fly.dev/#/home" target="_blank" rel="noopener noreferrer">
-
-                    <button                    >
-                      Site
-                    </button>
+                  <a
+                    href="https://marketwatcher.fly.dev/#/home"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>Site</button>
                   </a>
-
                 </div>
                 <div className="CodeContainer">
-                  <a href="https://github.com/sezasada/Solo" target="_blank" rel="noopener noreferrer">
-
-                    <button>
-                      Code
-                    </button>
+                  <a
+                    href="https://github.com/sezasada/Solo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>Code</button>
                   </a>
-
                 </div>
               </div>
               <div className="text-center mt-4">
@@ -174,6 +174,17 @@ function Home() {
                     Stock News API
                   </a>
                 </p>
+                <p style={{ textAlign: "left" }}>
+                  <a
+                    className="text-base text-teal-600 font-medium dark:text-teal-400"
+                    href="https://openai.com/blog/openai-api"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    Open AI Api
+                  </a>
+                </p>
               </div>
             </div>
             <div className="basis-1/3 flex-1">
@@ -208,24 +219,23 @@ function Home() {
                 />
               </a>
               <div className="buttonContainer">
-
                 <div className="SiteContainer">
-                  <a href="https://farminthedell.fly.dev/#/main" target="_blank" rel="noopener noreferrer">
-
-                    <button                    >
-                      Site
-                    </button>
+                  <a
+                    href="https://farminthedell.fly.dev/#/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>Site</button>
                   </a>
-
                 </div>
                 <div className="CodeContainer">
-                  <a href="https://github.com/sezasada/task_portal" target="_blank" rel="noopener noreferrer">
-
-                    <button>
-                      Code
-                    </button>
+                  <a
+                    href="https://github.com/sezasada/task_portal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>Code</button>
                   </a>
-
                 </div>
               </div>
               <div className="text-center mt-4">
