@@ -200,3 +200,25 @@ a {
   justify-content: space-between;
   width: 100%;
 }
+
+.projects-title {
+  width: 65%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  
+
+}
+
+.divs-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

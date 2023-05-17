@@ -69,16 +69,20 @@ function Home() {
           </div>
         </section>
         <section className="py-10">
-          <div>
-            <div className="text-3xl py-1 dark:text-white ">Projects</div>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              As a junior developer, I&apos;ve been expanding my skills in
-              Javascript, React.js, PostgreSQL, MySQL, C#, HTML, CSS, and
-              I&apos;m always on the lookout for new challenges and projects to
-              tackle. I believe that coding is both an art and a science, and
-              I&apos;m committed to crafting elegant, efficient solutions that
-              meet the needs of my clients and users.
-            </p>
+          <div className="divs-div">
+            <div className="projects-title">
+              <div className="center-title">
+                <div className="text-3xl py-1 dark:text-white">Projects</div>
+              </div>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+                As a junior developer, I&apos;ve been expanding my skills in
+                Javascript, React.js, PostgreSQL, MySQL, C#, HTML, CSS, and
+                I&apos;m always on the lookout for new challenges and projects to
+                tackle. I believe that coding is both an art and a science, and
+                I&apos;m committed to crafting elegant, efficient solutions that
+                meet the needs of my clients and users.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
