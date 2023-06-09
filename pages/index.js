@@ -10,7 +10,7 @@ import Image from "next/image";
 import MarketWatcher from "../public/MarketWatcher.png";
 import EarningsData from "../public/EarningsData.png";
 function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -20,9 +20,8 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`px-10 md:px-20 lg:px-40 ${
-          darkMode ? "bg-gray-900 dark:text-white" : "bg-D3D3D3"
-        }`}
+        className={`px-10 md:px-20 lg:px-40 ${darkMode ? "bg-gray-900 dark:text-white" : "bg-D3D3D3"
+          }`}
       >
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
@@ -64,17 +63,18 @@ function Home() {
               </Link>
             </div>
 
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 border-4 border-teal-600 dark:border-teal-400">
               <Image src={mypicture} alt="Picture of Sebastien" />
             </div>
           </div>
         </section>
         <section className="py-10">
           <div className="divs-div">
-            <div className="projects-title">
+            <div className="text-center mt-4" style={{ maxWidth: '1000px', margin: '0 auto' }}>
               <div className="center-title">
                 <div className="text-3xl py-1 dark:text-white">Projects</div>
               </div>
+
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                 As a junior developer, I&apos;ve been expanding my skills in
                 Javascript, React.js, PostgreSQL, MySQL, C#, HTML, CSS, and
@@ -104,21 +104,26 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image
-                    className="marketwatcherimg"
-                    src={EarningsData}
-                    alt="Image of Market Watcher Application"
-                    onMouseOver={(e) => {
-                      e.target.style.transform = "scale(1.39) translateZ(0)";
-                    }}
-                    onMouseOut={(e) => {
-                      e.target.style.transform = "scale(1) translateZ(0)";
-                    }}
-                  />
+                  <div className={darkMode ? "dark-border" : "light-border"}>
+                    <Image
+                      className="marketwatcherimg"
+                      src={EarningsData}
+                      alt="Image of Market Watcher Application"
+                      onMouseOver={(e) => {
+                        e.target.style.transform = "scale(1.39) translateZ(0)";
+                      }}
+                      onMouseOut={(e) => {
+                        e.target.style.transform = "scale(1) translateZ(0)";
+                      }}
+                    />
+                  </div>
                 </a>
               </div>
               <div className="buttonContainer">
-                <div className="SiteContainer">
+                <div
+                  className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
+                  onClick={() => window.open('https://marketwatcher.fly.dev/#/home', '_blank')}
+                >
                   <a
                     href="https://marketwatcher.fly.dev/#/home"
                     target="_blank"
@@ -127,7 +132,9 @@ function Home() {
                     <button>Site</button>
                   </a>
                 </div>
-                <div className="CodeContainer">
+                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
+                  onClick={() => window.open('https://github.com/sezasada/Solo', '_blank')}
+                >
                   <a
                     href="https://github.com/sezasada/Solo"
                     target="_blank"
@@ -208,22 +215,26 @@ function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  className="farmworksimg"
-                  src={farmworks}
-                  alt="image of farmworks application"
-                  onMouseOver={(e) => {
-                    e.target.style.transform = "scale(1.6)";
-                    e.target.style.transformOrigin = "top";
-                  }}
-                  onMouseOut={(e) => {
-                    e.target.style.transform = "scale(1)";
-                    e.target.style.transformOrigin = "center";
-                  }}
-                />
+                <div className={darkMode ? "dark-border" : "light-border"}>
+                  <Image
+                    className="farmworksimg"
+                    src={farmworks}
+                    alt="image of farmworks application"
+                    onMouseOver={(e) => {
+                      e.target.style.transform = "scale(1.6)";
+                      e.target.style.transformOrigin = "top";
+                    }}
+                    onMouseOut={(e) => {
+                      e.target.style.transform = "scale(1)";
+                      e.target.style.transformOrigin = "center";
+                    }}
+                  />
+                </div>
               </a>
               <div className="buttonContainer">
-                <div className="SiteContainer">
+                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
+                  onClick={() => window.open('https://farminthedell.fly.dev/#/main', '_blank')}
+                >
                   <a
                     href="https://farminthedell.fly.dev/#/main"
                     target="_blank"
@@ -232,7 +243,9 @@ function Home() {
                     <button>Site</button>
                   </a>
                 </div>
-                <div className="CodeContainer">
+                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
+                  onClick={() => window.open('https://github.com/sezasada/task_portal', '_blank')}
+                >
                   <a
                     href="https://github.com/sezasada/task_portal"
                     target="_blank"
