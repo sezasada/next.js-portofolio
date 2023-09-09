@@ -1,9 +1,8 @@
 import Head from "next/head";
 import { AiFillLinkedin } from "react-icons/ai";
-import React from "react";
+import React, { useState, useRef, useEffect } from 'react';
 import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useState } from "react";
 import mypicture from "../public/mypicture.png";
 import farmworks from "../public/farmworks.png";
 import Image from "next/image";
@@ -11,6 +10,35 @@ import MarketWatcher from "../public/MarketWatcher.png";
 import EarningsData from "../public/EarningsData.png";
 function Home() {
   const [darkMode, setDarkMode] = useState(true);
+  const [clickedLetters, setClickedLetters] = useState("");
+  const secretSequence = "is";
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (clickedLetters.slice(-secretSequence.length) === secretSequence) {
+      videoRef.current.play();
+    }
+  }, [clickedLetters, secretSequence]);
+
+  const letters = [
+    'C', 'r', 'y', 'p', 't', 'o', 'E', 'x', 'c', 'h', 'a', 'n', 'g', 'e', '`', 'i', 's', '`', 'a', '`', 's', 'o', 'l', 'i', 'd', 'i', 't', 'y', '/', 'j', 's', '`', 'a', 'p', 'p', 'l', 'i', 'c', 'a', 't', 'i', 'o', 'n', '`', 't', 'h', 'a', 't', '`', 'a', 'l', 'l', 'o', 'w', 's', '`', 'u', 's', 'e', 'r', 's', '`', 't', 'o', '`', 't', 'r', 'a', 'd', 'e', '/', 'd', 'e', 'p', 'o', 's', 'i', 't', '/', 'w', 'i', 't', 'h', 'd', 'r', 'a', 'w', '`', 'r', 'e', 'a', 'l', '`', 'o', 'r', '`', 'm', 'o', 'c', 'k', '`', 'c', 'u', 'r', 'r', 'e', 'n', 'c', 'y', ',', '`', 'p', 'o', 'w', 'e', 'r', 'e', 'd', '`', 'b', 'y', '`', 's', 'm', 'a', 'r', 't', '`', 'c', 'o', 'n', 't', 'r', 'a', 'c', 't', 's', '.', '`', 'V', 'a', 'r', 'i', 'o', 'u', 's', '`', 't', 'e', 'c', 'h', 'n', 'o', 'l', 'o', 'g', 'i', 'e', 's', '`', 'a', 'r', 'e', '`', 'u', 's', 'e', 'd', '`', 't', 'h', 'r', 'o', 'u', 'g', 'h', 'o', 'u', 't', '`', 't', 'h', 'i', 's', '`', 'a', 'p', 'p', 'l', 'i', 'c', 'a', 't', 'i', 'o', 'n', ',', '`', 's', 'u', 'c', 'h', '`', 'a', 's', '`', 'H', 'a', 'r', 'd', 'h', 'a', 't', ',', '`', 'r', 'e', 'd', 'u', 'x', ',', '`', 'm', 'e', 't', 'a', 'm', 'a', 's', 'k', '.'
+  ];
+
+  const handleLetterClick = (letter) => {
+    if (letter !== '`') {
+      setClickedLetters((prevLetters) => prevLetters + letter.toLowerCase());
+    }
+  }
+
+
+  const togglePlayPause = () => {
+    const video = videoRef.current;
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  }
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -47,13 +75,10 @@ function Home() {
               Sebastien Zasada
             </div>
             <div className="text-2xl py-2 dark:text-white md:text-3xl">
-              Software Developer
+              Software Engineer
             </div>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              I am a graduate of Emerging Digital Academy, an immersion in
-              software engineering education, establishing a foundation that
-              will allow me to immediately contribute as an entry level software
-              engineer.
+              I am a Software Engineer at Landtrust, The Recractional Access Network. I love working with front-end and back-end development and I'm always looking for ways to further my technical skills.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <Link href="https://www.linkedin.com/in/sebastien-zasada">
@@ -270,6 +295,83 @@ function Home() {
                   them. For more information about the Farm in the Dell and the
                   application, click here:
                 </p>
+                <Link href="/task_portal">
+                  <p style={{ textAlign: "left" }}>
+                    <a
+                      className="text-base text-teal-600 font-medium dark:text-teal-400"
+                      style={{ textDecoration: "underline", cursor: "pointer" }}
+                    >
+                      Application information
+                    </a>
+                  </p>
+                </Link>
+              </div>
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  textAlign: "center",
+                  marginBottom: "10px",
+                }}
+                className="text-3xl py-1 dark:text-white"
+              >
+                CryptoExchange
+              </div>
+
+              <div className={darkMode ? "dark-border" : "light-border"}>
+                <div className="secret-container">
+                  {clickedLetters.slice(-secretSequence.length) === secretSequence && (
+                    <video className="codClip"
+                      ref={videoRef}
+                      onClick={togglePlayPause}
+                      src="/newvid.mp4"
+                      type="video/mp4"
+                      loop
+                      muted
+                      alt="image of crypto application"
+                    >
+                    </video>
+                  )}
+                </div>
+              </div>
+
+              <div className="buttonContainer">
+                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
+                  onClick={() => window.open('https://farminthedell.fly.dev/#/main', '_blank')}
+                >
+                  <a
+                    href="https://farminthedell.fly.dev/#/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>Site</button>
+                  </a>
+                </div>
+                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
+                  onClick={() => window.open('https://github.com/sezasada/task_portal', '_blank')}
+                >
+                  <a
+                    href="https://github.com/sezasada/task_portal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>Code</button>
+                  </a>
+                </div>
+              </div>
+              <div className="text-center mt-4">
+                  <p className="title-main">
+                    {letters.map((letter, index) => (
+                      letter === '`' ? <div className="space-between" key={index}></div> :
+                        <div className="letter text-md py-2 leading-8 text-gray-800 dark:text-gray-200"
+                          key={index} onClick={() => handleLetterClick(letter)}>
+                          {letter}
+                        </div>
+                    ))}
+                  </p>
                 <Link href="/task_portal">
                   <p style={{ textAlign: "left" }}>
                     <a

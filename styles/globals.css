@@ -252,3 +252,26 @@ a {
 .navigation {
   width: 100%;
 }
+
+.secret-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-main {
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.letter {
+  transition: 0.4s;
+  transform: translateX(0);
+  cursor: grab;
+}
+
+.space-between {
+  margin-right: 7.4px;
+}
