@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { AiFillLinkedin } from "react-icons/ai";
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import mypicture from "../public/mypicture.png";
@@ -21,15 +21,244 @@ function Home() {
   }, [clickedLetters, secretSequence]);
 
   const letters = [
-    'C', 'r', 'y', 'p', 't', 'o', 'E', 'x', 'c', 'h', 'a', 'n', 'g', 'e', '`', 'i', 's', '`', 'a', '`', 's', 'o', 'l', 'i', 'd', 'i', 't', 'y', '/', 'j', 's', '`', 'a', 'p', 'p', 'l', 'i', 'c', 'a', 't', 'i', 'o', 'n', '`', 't', 'h', 'a', 't', '`', 'a', 'l', 'l', 'o', 'w', 's', '`', 'u', 's', 'e', 'r', 's', '`', 't', 'o', '`', 't', 'r', 'a', 'd', 'e', '/', 'd', 'e', 'p', 'o', 's', 'i', 't', '/', 'w', 'i', 't', 'h', 'd', 'r', 'a', 'w', '`', 'r', 'e', 'a', 'l', '`', 'o', 'r', '`', 'm', 'o', 'c', 'k', '`', 'c', 'u', 'r', 'r', 'e', 'n', 'c', 'y', ',', '`', 'p', 'o', 'w', 'e', 'r', 'e', 'd', '`', 'b', 'y', '`', 's', 'm', 'a', 'r', 't', '`', 'c', 'o', 'n', 't', 'r', 'a', 'c', 't', 's', '.', '`', 'V', 'a', 'r', 'i', 'o', 'u', 's', '`', 't', 'e', 'c', 'h', 'n', 'o', 'l', 'o', 'g', 'i', 'e', 's', '`', 'a', 'r', 'e', '`', 'u', 's', 'e', 'd', '`', 't', 'h', 'r', 'o', 'u', 'g', 'h', 'o', 'u', 't', '`', 't', 'h', 'i', 's', '`', 'a', 'p', 'p', 'l', 'i', 'c', 'a', 't', 'i', 'o', 'n', ',', '`', 's', 'u', 'c', 'h', '`', 'a', 's', '`', 'H', 'a', 'r', 'd', 'h', 'a', 't', ',', '`', 'r', 'e', 'd', 'u', 'x', ',', '`', 'm', 'e', 't', 'a', 'm', 'a', 's', 'k', '.'
+    "C",
+    "r",
+    "y",
+    "p",
+    "t",
+    "o",
+    "E",
+    "x",
+    "c",
+    "h",
+    "a",
+    "n",
+    "g",
+    "e",
+    "`",
+    "i",
+    "s",
+    "`",
+    "a",
+    "`",
+    "s",
+    "o",
+    "l",
+    "i",
+    "d",
+    "i",
+    "t",
+    "y",
+    "/",
+    "j",
+    "s",
+    "`",
+    "a",
+    "p",
+    "p",
+    "l",
+    "i",
+    "c",
+    "a",
+    "t",
+    "i",
+    "o",
+    "n",
+    "`",
+    "t",
+    "h",
+    "a",
+    "t",
+    "`",
+    "a",
+    "l",
+    "l",
+    "o",
+    "w",
+    "s",
+    "`",
+    "u",
+    "s",
+    "e",
+    "r",
+    "s",
+    "`",
+    "t",
+    "o",
+    "`",
+    "t",
+    "r",
+    "a",
+    "d",
+    "e",
+    "/",
+    "d",
+    "e",
+    "p",
+    "o",
+    "s",
+    "i",
+    "t",
+    "/",
+    "w",
+    "i",
+    "t",
+    "h",
+    "d",
+    "r",
+    "a",
+    "w",
+    "`",
+    "r",
+    "e",
+    "a",
+    "l",
+    "`",
+    "o",
+    "r",
+    "`",
+    "m",
+    "o",
+    "c",
+    "k",
+    "`",
+    "c",
+    "u",
+    "r",
+    "r",
+    "e",
+    "n",
+    "c",
+    "y",
+    ",",
+    "`",
+    "p",
+    "o",
+    "w",
+    "e",
+    "r",
+    "e",
+    "d",
+    "`",
+    "b",
+    "y",
+    "`",
+    "s",
+    "m",
+    "a",
+    "r",
+    "t",
+    "`",
+    "c",
+    "o",
+    "n",
+    "t",
+    "r",
+    "a",
+    "c",
+    "t",
+    "s",
+    ".",
+    "`",
+    "V",
+    "a",
+    "r",
+    "i",
+    "o",
+    "u",
+    "s",
+    "`",
+    "t",
+    "e",
+    "c",
+    "h",
+    "n",
+    "o",
+    "l",
+    "o",
+    "g",
+    "i",
+    "e",
+    "s",
+    "`",
+    "a",
+    "r",
+    "e",
+    "`",
+    "u",
+    "s",
+    "e",
+    "d",
+    "`",
+    "t",
+    "h",
+    "r",
+    "o",
+    "u",
+    "g",
+    "h",
+    "o",
+    "u",
+    "t",
+    "`",
+    "t",
+    "h",
+    "i",
+    "s",
+    "`",
+    "a",
+    "p",
+    "p",
+    "l",
+    "i",
+    "c",
+    "a",
+    "t",
+    "i",
+    "o",
+    "n",
+    ",",
+    "`",
+    "s",
+    "u",
+    "c",
+    "h",
+    "`",
+    "a",
+    "s",
+    "`",
+    "H",
+    "a",
+    "r",
+    "d",
+    "h",
+    "a",
+    "t",
+    ",",
+    "`",
+    "r",
+    "e",
+    "d",
+    "u",
+    "x",
+    ",",
+    "`",
+    "m",
+    "e",
+    "t",
+    "a",
+    "m",
+    "a",
+    "s",
+    "k",
+    ".",
   ];
 
   const handleLetterClick = (letter) => {
-    if (letter !== '`') {
+    if (letter !== "`") {
       setClickedLetters((prevLetters) => prevLetters + letter.toLowerCase());
     }
-  }
-
+  };
 
   const togglePlayPause = () => {
     const video = videoRef.current;
@@ -38,7 +267,7 @@ function Home() {
     } else {
       video.pause();
     }
-  }
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -48,8 +277,9 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`px-10 md:px-20 lg:px-40 ${darkMode ? "bg-gray-900 dark:text-white" : "bg-D3D3D3"
-          }`}
+        className={`px-10 md:px-20 lg:px-40 ${
+          darkMode ? "bg-gray-900 dark:text-white" : "bg-D3D3D3"
+        }`}
       >
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
@@ -78,7 +308,9 @@ function Home() {
               Software Engineer
             </div>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              I am a Software Engineer at Landtrust, The Recractional Access Network. I love working with front-end and back-end development and I'm always looking for ways to further my technical skills.
+              I am a Software Engineer at Landtrust, The Recractional Access
+              Network. I love working with front-end and back-end development
+              and I am always looking for ways to further my technical skills.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <Link href="https://www.linkedin.com/in/sebastien-zasada">
@@ -95,7 +327,10 @@ function Home() {
         </section>
         <section className="py-10">
           <div className="divs-div">
-            <div className="text-center mt-4" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+            <div
+              className="text-center mt-4"
+              style={{ maxWidth: "1000px", margin: "0 auto" }}
+            >
               <div className="center-title">
                 <div className="text-3xl py-1 dark:text-white">Projects</div>
               </div>
@@ -103,10 +338,10 @@ function Home() {
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                 As a junior developer, I&apos;ve been expanding my skills in
                 Javascript, React.js, PostgreSQL, MySQL, C#, HTML, CSS, and
-                I&apos;m always on the lookout for new challenges and projects to
-                tackle. I believe that coding is both an art and a science, and
-                I&apos;m committed to crafting elegant, efficient solutions that
-                meet the needs of my clients and users.
+                I&apos;m always on the lookout for new challenges and projects
+                to tackle. I believe that coding is both an art and a science,
+                and I&apos;m committed to crafting elegant, efficient solutions
+                that meet the needs of my clients and users.
               </p>
             </div>
           </div>
@@ -146,8 +381,17 @@ function Home() {
               </div>
               <div className="buttonContainer">
                 <div
-                  className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
-                  onClick={() => window.open('https://marketwatcher.fly.dev/#/home', '_blank')}
+                  className={
+                    darkMode
+                      ? "CodeContainer dark-mode"
+                      : "CodeContainer light-mode"
+                  }
+                  onClick={() =>
+                    window.open(
+                      "https://marketwatcher.fly.dev/#/home",
+                      "_blank"
+                    )
+                  }
                 >
                   <a
                     href="https://marketwatcher.fly.dev/#/home"
@@ -157,8 +401,15 @@ function Home() {
                     <button>Site</button>
                   </a>
                 </div>
-                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
-                  onClick={() => window.open('https://github.com/sezasada/Solo', '_blank')}
+                <div
+                  className={
+                    darkMode
+                      ? "CodeContainer dark-mode"
+                      : "CodeContainer light-mode"
+                  }
+                  onClick={() =>
+                    window.open("https://github.com/sezasada/Solo", "_blank")
+                  }
                 >
                   <a
                     href="https://github.com/sezasada/Solo"
@@ -257,8 +508,18 @@ function Home() {
                 </div>
               </a>
               <div className="buttonContainer">
-                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
-                  onClick={() => window.open('https://farminthedell.fly.dev/#/main', '_blank')}
+                <div
+                  className={
+                    darkMode
+                      ? "CodeContainer dark-mode"
+                      : "CodeContainer light-mode"
+                  }
+                  onClick={() =>
+                    window.open(
+                      "https://farminthedell.fly.dev/#/main",
+                      "_blank"
+                    )
+                  }
                 >
                   <a
                     href="https://farminthedell.fly.dev/#/main"
@@ -268,8 +529,18 @@ function Home() {
                     <button>Site</button>
                   </a>
                 </div>
-                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
-                  onClick={() => window.open('https://github.com/sezasada/task_portal', '_blank')}
+                <div
+                  className={
+                    darkMode
+                      ? "CodeContainer dark-mode"
+                      : "CodeContainer light-mode"
+                  }
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/sezasada/task_portal",
+                      "_blank"
+                    )
+                  }
                 >
                   <a
                     href="https://github.com/sezasada/task_portal"
@@ -323,8 +594,10 @@ function Home() {
 
               <div className={darkMode ? "dark-border" : "light-border"}>
                 <div className="secret-container">
-                  {clickedLetters.slice(-secretSequence.length) === secretSequence && (
-                    <video className="codClip"
+                  {clickedLetters.slice(-secretSequence.length) ===
+                    secretSequence && (
+                    <video
+                      className="codClip"
                       ref={videoRef}
                       onClick={togglePlayPause}
                       src="/newvid.mp4"
@@ -332,15 +605,24 @@ function Home() {
                       loop
                       muted
                       alt="image of crypto application"
-                    >
-                    </video>
+                    ></video>
                   )}
                 </div>
               </div>
 
               <div className="buttonContainer">
-                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
-                  onClick={() => window.open('https://farminthedell.fly.dev/#/main', '_blank')}
+                <div
+                  className={
+                    darkMode
+                      ? "CodeContainer dark-mode"
+                      : "CodeContainer light-mode"
+                  }
+                  onClick={() =>
+                    window.open(
+                      "https://farminthedell.fly.dev/#/main",
+                      "_blank"
+                    )
+                  }
                 >
                   <a
                     href="https://farminthedell.fly.dev/#/main"
@@ -350,8 +632,18 @@ function Home() {
                     <button>Site</button>
                   </a>
                 </div>
-                <div className={darkMode ? "CodeContainer dark-mode" : "CodeContainer light-mode"}
-                  onClick={() => window.open('https://github.com/sezasada/task_portal', '_blank')}
+                <div
+                  className={
+                    darkMode
+                      ? "CodeContainer dark-mode"
+                      : "CodeContainer light-mode"
+                  }
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/sezasada/task_portal",
+                      "_blank"
+                    )
+                  }
                 >
                   <a
                     href="https://github.com/sezasada/task_portal"
@@ -363,15 +655,57 @@ function Home() {
                 </div>
               </div>
               <div className="text-center mt-4">
-                  <p className="title-main">
-                    {letters.map((letter, index) => (
-                      letter === '`' ? <div className="space-between" key={index}></div> :
-                        <div className="letter text-md py-2 leading-8 text-gray-800 dark:text-gray-200"
-                          key={index} onClick={() => handleLetterClick(letter)}>
-                          {letter}
-                        </div>
-                    ))}
-                  </p>
+                <p className="title-main">
+                  {
+                    letters.reduce(
+                      (acc, letter, index) => {
+                        if (letter === "`" || index === letters.length - 1) {
+                          if (index === letters.length - 1 && letter !== "`") {
+                            acc.currentWord.push(
+                              <span
+                                className="letter text-md py-2 leading-8 text-gray-800 dark:text-gray-200"
+                                key={index}
+                                onClick={() => handleLetterClick(letter)}
+                              >
+                                {letter}
+                              </span>
+                            );
+                          }
+
+                          acc.words.push(
+                            <span className="word-container" key={index}>
+                              {acc.currentWord}
+                            </span>
+                          );
+                          if (letter === "`" && index !== letters.length - 1) {
+                            acc.words.push(
+                              <span
+                                key={`space-${index}`}
+                                style={{ whiteSpace: "pre" }}
+                              >
+                                &nbsp;
+                              </span>
+                            );
+                          }
+                          acc.currentWord = [];
+                        } else {
+                          acc.currentWord.push(
+                            <span
+                              className="letter text-md py-2 leading-8 text-gray-800 dark:text-gray-200"
+                              key={index}
+                              onClick={() => handleLetterClick(letter)}
+                            >
+                              {letter}
+                            </span>
+                          );
+                        }
+
+                        return acc;
+                      },
+                      { currentWord: [], words: [] }
+                    ).words
+                  }
+                </p>
                 <Link href="/task_portal">
                   <p style={{ textAlign: "left" }}>
                     <a

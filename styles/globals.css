@@ -269,9 +269,13 @@ a {
 .letter {
   transition: 0.4s;
   transform: translateX(0);
-  cursor: grab;
 }
 
 .space-between {
-  margin-right: 7.4px;
+  margin-right: .7%;
+}
+
+.word-container {
+  display: inline-block;
+  white-space: nowrap;
 }
