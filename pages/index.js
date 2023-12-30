@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { AiFillLinkedin } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -7,16 +8,19 @@ import mypicture from "../public/mypicture.png";
 import farmworks from "../public/farmworks.png";
 import Image from "next/image";
 import MarketWatcher from "../public/MarketWatcher.png";
+import cryptoExchange from "../public/crypto-exchange.png";
 import EarningsData from "../public/EarningsData.png";
 function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [clickedLetters, setClickedLetters] = useState("");
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const secretSequence = "is";
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (clickedLetters.slice(-secretSequence.length) === secretSequence) {
       videoRef.current.play();
+      setIsVideoPlaying(true);
     }
   }, [clickedLetters, secretSequence]);
 
@@ -217,7 +221,6 @@ function Home() {
     "i",
     "o",
     "n",
-    ",",
     "`",
     "s",
     "u",
@@ -227,7 +230,7 @@ function Home() {
     "a",
     "s",
     "`",
-    "H",
+    "h",
     "a",
     "r",
     "d",
@@ -242,6 +245,10 @@ function Home() {
     "u",
     "x",
     ",",
+    "`",
+    "a",
+    "n",
+    "d",
     "`",
     "m",
     "e",
@@ -312,14 +319,18 @@ function Home() {
               Network. I love working with front-end and back-end development
               and I am always looking for ways to further my technical skills.
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <div className="text-5xl flex justify-center gap-7 py-3 text-gray-600 dark:text-gray-400">
               <Link href="https://www.linkedin.com/in/sebastien-zasada">
                 <a target="_blank">
                   <AiFillLinkedin className="icon-grow" />
                 </a>
               </Link>
+              <Link href="https://github.com/sezasada">
+                <a target="_blank">
+                  <FaGithub className="icon-grow" />
+                </a>
+              </Link>
             </div>
-
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 border-4 border-teal-600 dark:border-teal-400">
               <Image src={mypicture} alt="Picture of Sebastien" />
             </div>
@@ -591,23 +602,44 @@ function Home() {
               >
                 CryptoExchange
               </div>
-
-              <div className={darkMode ? "dark-border" : "light-border"}>
-                <div className="secret-container">
-                  {clickedLetters.slice(-secretSequence.length) ===
-                    secretSequence && (
-                    <video
-                      className="codClip"
-                      ref={videoRef}
-                      onClick={togglePlayPause}
-                      src="/newvid.mp4"
-                      type="video/mp4"
-                      loop
-                      muted
-                      alt="image of crypto application"
-                    ></video>
-                  )}
-                </div>
+              <div style={{ overflow: "hidden", position: "relative" }}>
+                <a
+                  href="https://marketwatcher.fly.dev/#/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className={darkMode ? "dark-border" : "light-border"}>
+                    {!isVideoPlaying && (
+                      <Image
+                        className="marketwatcherimg"
+                        src={cryptoExchange}
+                        alt="Image of Market Watcher Application"
+                        onMouseOver={(e) => {
+                          e.target.style.transform =
+                            "scale(1.39) translateZ(0)";
+                        }}
+                        onMouseOut={(e) => {
+                          e.target.style.transform = "scale(1) translateZ(0)";
+                        }}
+                      />
+                    )}
+                    <div className="secret-container">
+                      {clickedLetters.slice(-secretSequence.length) ===
+                        secretSequence && (
+                        <video
+                          className="codClip"
+                          ref={videoRef}
+                          onClick={togglePlayPause}
+                          src="/newvid.mp4"
+                          type="video/mp4"
+                          loop
+                          muted
+                          alt="image of crypto application"
+                        ></video>
+                      )}
+                    </div>
+                  </div>
+                </a>
               </div>
 
               <div className="buttonContainer">
