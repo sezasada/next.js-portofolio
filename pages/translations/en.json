@@ -1,0 +1,16 @@
+{
+  "Heading.name": "Sebastien Zasada",
+  "Heading.resume": "Resume",
+  "Heading.jobTitle": "Software Engineer",
+  "Heading.userBio": "I am a Software Engineer at Landtrust, The Recractional Access Network. I love working with frontend and backend development and I am always looking for ways to further my technical skills.",
+  "Projects.marketWatcherTitle": "Market Watcher",
+  "Projects.marketWatcherBio": "Market Watcher is a comprehensive web application designed to provide users with seamless access to the latest earnings reports, financial data, and news for NASDAQ-listed companies. By simply entering a company name or symbol and selecting a time frame, users can quickly view relevant earnings reports. The user-friendly watchlist feature allows users to add stocks with a single click and conveniently rename their watchlist by clicking the pencil icon. The ticker bar at the top of the page displays all the stocks in a user&apos;s watchlist, and clicking on any ticker redirects the user to Trading View for in-depth data analysis and charting. All stock data, news articles, and earnings reports are consistently up to date throught the following APIs:",
+  "Projects.marketWatcherFMP": "Financial Modeling Prep",
+  "Projects.marketWatcherSN": "Stock News API",
+  "Projects.marketWatcherOAI": "Open AI Api",
+  "Projects.farmWorksTitle": "FarmWorks",
+  "Projects.farmWorksBio": "Farm in the Dell of the Red River River Valley is a non profit organization that was tracking their tasks around the farm on a whiteboard. This led to some issues of knowing who was responsible for what and what kind of tasks could be done during a specific day. This app is designed to streamline their process of task management. Helping to delegate tasks and keep track of what tasks are going on and who is doing them. For more information about the Farm in the Dell and the application, click here:",
+  "Projects.appInfo": "Application information",
+  "Projects.cryptoExchangeTitle": "CryptoExchange",
+  "Projects.cryptoExchangeBio": "CryptoExchange is a solidity/js application that allows users to trade/deposit/withdraw real or mock currency, powered by smart contracts. Various technologies are used throughout this application such as hardhat, redux, and metamask."
+}
