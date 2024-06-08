@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import EarningsData from "../../public/EarningsData.png";
-import farmworks from "../../public/farmworks.png";
-import cryptoExchange from "../../public/crypto-exchange.png";
-import MarketWatcher from "../../public/MarketWatcher.png";
+import EarningsData from "../../../public/EarningsData.png";
+import farmworks from "../../../public/farmworks.png";
+import cryptoExchange from "../../../public/crypto-exchange.png";
+import MarketWatcher from "../../../public/MarketWatcher.png";
 import { FormattedMessage } from "react-intl";
 
 const Projects = (darkMode) => {

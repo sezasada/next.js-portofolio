@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
-import mypicture from "../../public/mypicture.png";
+import mypicture from "../../../public/mypicture.png";
 import { FormattedMessage } from "react-intl";
 
 const Heading = ({ darkMode, setDarkMode }) => {

@@ -13,6 +13,7 @@
   "Projects.appInfo": "Application information",
   "Projects.cryptoExchangeTitle": "CryptoExchange",
   "Projects.cryptoExchangeBio": "CryptoExchange is a solidity/js application that allows users to trade/deposit/withdraw real or mock currency, powered by smart contracts. Various technologies are used throughout this application such as hardhat, redux, and metamask.",
+  "References.button": "Recomendation Letter",
   "References.title": "References",
   "SubHeading.title": "Projects",
   "SubHeading.bio": "As a Software Engineer 1, I’ve expanded my skills in react.js, next.js, graphql, typescript, AWS services such as elastic beanstalk, lambdas, rules engine, and setting up log groups. With over 2 years of coding experience I’ve been able to integrate with many third party api’s and services, allowing me to create and contribute scalable and efficient applications."

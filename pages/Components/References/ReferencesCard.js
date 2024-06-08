@@ -1,16 +1,13 @@
 import { shape, string } from "prop-types";
 import Image from "next/image";
+import { FormattedMessage } from "react-intl";
 
 const ReferencesCard = ({ name, jobTitle, Experience, image }) => {
   return (
     <div className="card-container border-2 dark:border-teal-400 border-teal-600">
       <div className="card-header">
         <div className="card-image">
-          <Image
-            src={image.src}
-            alt={image.alt}
-            objectFit="cover"
-          />
+          <Image src={image.src} alt={image.alt} objectFit="cover" />
         </div>
         <div className="card-bio">
           <div className="card-text">
@@ -22,9 +19,15 @@ const ReferencesCard = ({ name, jobTitle, Experience, image }) => {
         </div>
       </div>
       <div className="card-body">
-        <div className="card-text">
+        <div>
+          <div className="card-text">Experience</div>
+        </div>
+        <div className="card-subtext">
           <div>{Experience}</div>
         </div>
+        <button className="buttonStyles">
+          <FormattedMessage id="References.button" />
+        </button>
       </div>
     </div>
   );
