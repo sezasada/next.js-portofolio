@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import resume from "../public/resume.png"
+import resume from "../../public/resume.png";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';

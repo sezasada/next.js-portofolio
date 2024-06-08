@@ -3,6 +3,13 @@ import React, { useState, useRef, useEffect } from "react";
 import Heading from "./Components/Heading";
 import Projects from "./Components/Projects";
 import SubHeading from "./Components/SubHeading";
+import ReferencesCard from "./Components/References/ReferencesCard";
+import rob from "../public/references/rob.webp";
+import nic from "../public/references/nic.jpg";
+import kyril from "../public/references/kyril.webp";
+import josh from "../public/references/josh.jpg";
+import { FormattedMessage } from "react-intl";
+
 function Home() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -20,6 +27,35 @@ function Home() {
       >
         <Heading darkMode={darkMode} setDarkMode={setDarkMode} />
         <section className="py-10">
+          <div className="referencesHeading text-3xl py-1 dark:text-white">
+            <FormattedMessage id="References.title" />
+          </div>
+          <div className="references-container">
+            <ReferencesCard
+              name="Rob Rotarius"
+              jobTitle="Head of Engineering"
+              Experience="lorum epsindfjejkdnejnw"
+              image={{ src: rob, alt: "Rob" }}
+            />
+            <ReferencesCard
+              name="Nic De Castro"
+              jobTitle="Founder, CEO"
+              Experience="lorum epsindfjejkdnejnw"
+              image={{ src: nic, alt: "Rob" }}
+            />
+            <ReferencesCard
+              name="Kyril Revels"
+              jobTitle="Software Engineer"
+              Experience="lorum epsindfjejkdnejnw"
+              image={{ src: kyril, alt: "Kyril" }}
+            />
+            <ReferencesCard
+              name="Josh Hinton"
+              jobTitle="Software Engineer"
+              Experience="lorum epsindfjejkdnejnw"
+              image={{ src: josh, alt: "Josh" }}
+            />
+          </div>
           <SubHeading />
           <Projects darkMode={darkMode} />
         </section>

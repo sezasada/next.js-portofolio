@@ -35,7 +35,18 @@ const Heading = ({ darkMode, setDarkMode }) => {
           <FormattedMessage id="Heading.jobTitle" />
         </div>
         <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-          <FormattedMessage id="Heading.userBio" />
+          <FormattedMessage
+            id="Heading.userBio"
+            values={{
+              a: (chunks) => (
+                <Link href="https://www.landtrust.com">
+                  <a className="text-teal-500 hover:underline" target="_blank">
+                    {chunks}
+                  </a>
+                </Link>
+              ),
+            }}
+          />
         </p>
         <div className="text-5xl flex justify-center gap-7 py-3 text-gray-600 dark:text-gray-400">
           <Link href="https://www.linkedin.com/in/sebastien-zasada">
