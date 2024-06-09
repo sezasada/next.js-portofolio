@@ -13,8 +13,9 @@
   "Projects.appInfo": "Application information",
   "Projects.cryptoExchangeTitle": "CryptoExchange",
   "Projects.cryptoExchangeBio": "CryptoExchange is a solidity/js application that allows users to trade/deposit/withdraw real or mock currency, powered by smart contracts. Various technologies are used throughout this application such as hardhat, redux, and metamask.",
-  "References.button": "Recomendation Letter",
+  "References.button": "Show More",
   "References.title": "References",
+  "References.joshLetter": "There are so many great things to say about Sebastien that it's hard to know where to begin. I've had the pleasure of mentoring Sebastien over the past year at Landtrust. He joined as a Junior Engineer with little real-world engineering experience but the right attitude. Sebastien took every day as an opportunity to learn something new and perfect what he already knew. He was always the first to volunteer for any task and gave his best effort to maximize his potential. By the end of his first year, Sebastien had gained more experience pushing code and providing solutions for both front-end and back-end than most Junior Engineers acquire in 3-5 years. Sebastien's attitude, work ethic, and drive make him a huge asset, and he's only getting started. I fully recommend Sebastien to anyone looking to elevate their efforts. He brings not just real-world experience, but also the fire and passion needed to excel in any role. Do yourself a favor and hire Sebastien quickly before another company gains this tremendous asset.",
   "SubHeading.title": "Projects",
   "SubHeading.bio": "As a Software Engineer 1, I’ve expanded my skills in react.js, next.js, graphql, typescript, AWS services such as elastic beanstalk, lambdas, rules engine, and setting up log groups. With over 2 years of coding experience I’ve been able to integrate with many third party api’s and services, allowing me to create and contribute scalable and efficient applications."
 }

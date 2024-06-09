@@ -60,13 +60,21 @@ a {
   text-decoration: none;
 }
 
+.button-wrapper {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+
 .buttonStyles {
-  align-self: center;
+  align-self: left;
   margin-top: auto;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 120px;
   padding: 10px;
   border-radius: 10px;
   background-color: #38b2ac;
@@ -79,7 +87,6 @@ a {
   object-fit: cover;
   transition: transform 0.5s ease;
   position: relative;
-  z-index: 1;
 }
 
 .marketwatcherimg {
@@ -88,7 +95,6 @@ a {
   object-fit: cover;
   transition: transform 0.5s ease;
   position: relative;
-  z-index: 1;
 }
 
 * {
@@ -339,4 +345,13 @@ a {
 .card-bio {
   display: flex;
   flex-direction: column;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .75);
 }
