@@ -33,24 +33,31 @@ function Home() {
           <div className="references-container">
             <ReferencesCard
               name="Rob Rotarius"
+              firstName="Rob"
               jobTitle="Head of Engineering"
               reference="Software Development Manager at Amazon Web Services, Director of Enterprise Platform at LTK, Architect Engineer at Rakuten Advertising."
               image={{ src: rob, alt: "Rob" }}
+              linkedIn="https://www.linkedin.com/in/rob-rotarius-97b49812/"
             />
             <ReferencesCard
               name="Nic De Castro"
+              firstName="Nic"
               jobTitle="Founder, CEO"
               reference="Founder of LandTrust, VP of Strategic Partnerships at Strike Social, VP of Product and Strategy at Brite Content."
               image={{ src: nic, alt: "Rob" }}
+              linkedIn="https://www.linkedin.com/in/nicdecastro/"
             />
             <ReferencesCard
-              name="Kyril Revels"
-              jobTitle="Software Engineer"
+              name="Cody Hebert"
+              firstName="Cody"
+              jobTitle="Product Lead"
               reference="Principal Engineer at RMR Software Solutions, Manager of Software Engineers at Rakuten Advertising, Senior Software Engineer at DevelopDC."
-              image={{ src: kyril, alt: "Kyril" }}
+              image={{ src: kyril, alt: "Cody" }}
+              linkedIn="https://www.linkedin.com/in/cody-allen-hebert/"
             />
             <ReferencesCard
               name="Josh Hinton"
+              firstName="Josh"
               jobTitle="Software Engineer"
               reference="There are so many great things to say about Sebastien that it's hard to know where to begin. I've had the pleasure of mentoring Sebastien over the past year at Landtrust. He joined as..."
               expandedReference={
@@ -59,6 +66,7 @@ function Home() {
                 </>
               }
               image={{ src: josh, alt: "Josh" }}
+              linkedIn="https://www.linkedin.com/in/jhint/"
             />
           </div>
           <SubHeading />

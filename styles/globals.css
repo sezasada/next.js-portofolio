@@ -60,6 +60,13 @@ a {
   text-decoration: none;
 }
 
+.button-container {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  margin-left: 5px;
+}
+
 .button-wrapper {
   display: flex;
   justify-content: right;
@@ -68,13 +75,8 @@ a {
 }
 
 .buttonStyles {
-  align-self: left;
-  margin-top: auto;
   margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
+  width: 130px;
   padding: 10px;
   border-radius: 10px;
   background-color: #38b2ac;
@@ -339,7 +341,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .card-bio {
@@ -353,5 +355,5 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, 0.75);
 }

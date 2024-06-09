@@ -6,10 +6,12 @@ import ReferenceModal from "../ReferenceModal/ReferenceModal";
 
 const ReferencesCard = ({
   name,
+  firstName,
   jobTitle,
   reference,
   expandedReference,
   image,
+  linkedIn,
 }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -41,9 +43,22 @@ const ReferencesCard = ({
           <div className="card-subtext">
             <div>{reference}</div>
           </div>
-          <button className="buttonStyles" onClick={openModal}>
-            <FormattedMessage id="References.button" />
-          </button>
+          <div>
+            <div className="button-container">
+              <button className="buttonStyles" onClick={openModal}>
+                <FormattedMessage id="References.button" />
+              </button>
+              <button
+                className="buttonStyles"
+                onClick={() => window.open(linkedIn, "_blank")}
+              >
+                <FormattedMessage
+                  id="References.contactReference"
+                  values={{ name: firstName }}
+                />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <div>
