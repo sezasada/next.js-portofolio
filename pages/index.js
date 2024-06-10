@@ -6,7 +6,7 @@ import SubHeading from "./Components/SubHeading/SubHeading";
 import ReferencesCard from "./Components/References/ReferencesCard";
 import rob from "../public/references/rob.webp";
 import nic from "../public/references/nic.jpg";
-import kyril from "../public/references/kyril.webp";
+import cody from "../public/references/cody.jpg";
 import josh from "../public/references/josh.jpg";
 import { FormattedMessage } from "react-intl";
 
@@ -51,9 +51,14 @@ function Home() {
               name="Cody Hebert"
               firstName="Cody"
               jobTitle="Product Lead"
-              reference="Principal Engineer at RMR Software Solutions, Manager of Software Engineers at Rakuten Advertising, Senior Software Engineer at DevelopDC."
-              image={{ src: kyril, alt: "Cody" }}
+              reference="I worked with Sebastien at LandTrust for over a year, and it was incredible to see how quickly he picked up speed and started pushing code that solved customer pain points. Sebastien not only..."
+              image={{ src: cody, alt: "Cody" }}
               linkedIn="https://www.linkedin.com/in/cody-allen-hebert/"
+              expandedReference={
+                <>
+                  <FormattedMessage id="References.codyLetter" />
+                </>
+              }
             />
             <ReferencesCard
               name="Josh Hinton"
