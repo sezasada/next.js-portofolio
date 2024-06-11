@@ -23,6 +23,11 @@ const ReferencesCard = ({
     setIsOpen(false);
   };
 
+    if (!image || !image.src || !image.alt) {
+      console.error("Image prop is missing or incomplete:", image);
+      return null;
+    }
+
   return (
     <div>
       <div className="card-container border-2 dark:border-teal-400 border-teal-600">
@@ -76,9 +81,11 @@ const ReferencesCard = ({
 
 ReferencesCard.propTypes = {
   name: string.isRequired,
+  firstName: string.isRequired,
   jobTitle: string.isRequired,
   reference: string.isRequired,
   expandedReference: node,
+  linkedIn: string.isRequired,
   image: shape({
     src: string.isRequired,
     alt: string.isRequired,
