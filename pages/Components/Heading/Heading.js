@@ -5,6 +5,8 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import mypicture from "../../../public/mypicture.png";
 import { FormattedMessage } from "react-intl";
+const contributionsPdf = '/_next/static/media/Sebastien-Contributions.pdf';
+const resume = "/_next/static/media/Resume.pdf";
 
 const Heading = ({ darkMode, setDarkMode }) => {
   return (
@@ -19,8 +21,8 @@ const Heading = ({ darkMode, setDarkMode }) => {
             />
           </li>
           <li>
-            <Link href="/resume">
-              <a className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8">
+            <Link href={resume}>
+              <a className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8" target="_blank">
                 <FormattedMessage id="Heading.resume" />
               </a>
             </Link>
@@ -40,6 +42,13 @@ const Heading = ({ darkMode, setDarkMode }) => {
             values={{
               a: (chunks) => (
                 <Link href="https://www.landtrust.com">
+                  <a className="text-teal-500 hover:underline" target="_blank">
+                    {chunks}
+                  </a>
+                </Link>
+              ),
+              b: (chunks) => (
+                <Link href={contributionsPdf}>
                   <a className="text-teal-500 hover:underline" target="_blank">
                     {chunks}
                   </a>

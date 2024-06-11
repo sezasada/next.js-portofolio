@@ -45,9 +45,11 @@ const ReferencesCard = ({
           </div>
           <div>
             <div className="button-container">
-              <button className="buttonStyles" onClick={openModal}>
-                <FormattedMessage id="References.button" />
-              </button>
+              {expandedReference ? (
+                <button className="buttonStyles" onClick={openModal}>
+                  <FormattedMessage id="References.button" />
+                </button>
+              ) : null}
               <button
                 className="buttonStyles"
                 onClick={() => window.open(linkedIn, "_blank")}
@@ -76,7 +78,7 @@ ReferencesCard.propTypes = {
   name: string.isRequired,
   jobTitle: string.isRequired,
   reference: string.isRequired,
-  expandedReference: node.isRequired,
+  expandedReference: node,
   image: shape({
     src: string.isRequired,
     alt: string.isRequired,
