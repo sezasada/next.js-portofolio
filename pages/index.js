@@ -35,7 +35,6 @@ function Home() {
               name="Rob Rotarius"
               firstName="Rob"
               jobTitle="Head of Engineering"
-              reference="Software Development Manager at Amazon Web Services, Director of Enterprise Platform at LTK, Architect Engineer at Rakuten Advertising."
               image={{ src: rob, alt: "Rob" }}
               linkedIn="https://www.linkedin.com/in/rob-rotarius-97b49812/"
             />
@@ -43,7 +42,6 @@ function Home() {
               name="Nic De Castro"
               firstName="Nic"
               jobTitle="Founder, CEO"
-              reference="Founder of LandTrust, VP of Strategic Partnerships at Strike Social, VP of Product and Strategy at Brite Content."
               image={{ src: nic, alt: "Rob" }}
               linkedIn="https://www.linkedin.com/in/nicdecastro/"
             />

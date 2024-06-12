@@ -83,7 +83,7 @@ ReferencesCard.propTypes = {
   name: string.isRequired,
   firstName: string.isRequired,
   jobTitle: string.isRequired,
-  reference: string.isRequired,
+  reference: string,
   expandedReference: node,
   linkedIn: string.isRequired,
   image: shape({
